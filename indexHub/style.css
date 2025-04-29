@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+    background-color: #c6c6c6; /*Changes base background color */
+    text-align: left;
+}
+
+.paragraph-spacing {
+    margin-top: 200px; /* Adjust the value as needed (First block of text outside of the navigation bar)*/
+}
+
+header {
+    background-color: #747474; /*Changes nav-bar color*/
+    color: #88bdf2;
+    padding: 15px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* nav-bar text color */
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links li {
+    padding: 15px; /*nav-bar size*/
+}
+
+.nav-links a:hover { /*Hovering over hyperlink actions*/
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column;
+		width: 410px;
+    }
