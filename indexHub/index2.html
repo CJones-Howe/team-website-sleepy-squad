@@ -19,7 +19,28 @@
             </ul>
         </nav>
     </header>
-    <p class="paragraph-spacing">This is my first paragraph.</p>
+    <p>Technical Logistics of the Attack<br>
+    </p><br>
+    <p>Vulnerability Exploited: CVE-2017-5638<br>
+        The breach originated from CVE-2017-5638, a critical vulnerability in the Apache Struts 2 framework, specifically within its Jakarta Multipart parser used to handle file uploads. This flaw allowed remote code execution (RCE) through crafted HTTP requests containing malicious Content-Type headers.<br>
+        Severity: CVSS score of 10.0 (critical)<br>
+        Disclosure Date: March 6, 2017<br>
+        Patch Released: Same day by the Apache Software Foundation<br>
+    </p><br>
+    <p>Equifax’s Failure to Patch<br>
+        Despite receiving alerts from the U.S. Department of Homeland Security (DHS) and internal security directives, Equifax failed to identify and patch all vulnerable systems. A critical web application tied to Equifax's consumer dispute portal remained unpatched and publicly accessible.<br>
+        March 7, 2017: DHS issues public warning<br>
+        March 8, 2017: Equifax security team is notified<br>
+        March 10, 2017: Attackers begin exploiting the vulnerability<br>
+        This oversight exposed Equifax to active exploitation for over two months.<br>  
+    </p><br>
+    <p>Timeline of Exploitation<br>
+        May 13 – July 30, 2017: Attackers maintained persistent access to Equifax’s network<br>
+        Data Exfiltrated: Names, Social Security numbers, birthdates, addresses, driver's license numbers, and credit card information<br>
+        Attackers used web shells and performed lateral movement within the network to escalate access<br>
+        Exfiltration was performed in small, encrypted batches to avoid detection<br>
+    </p><br> 
+    
     <footer>
         <p>(Footer code block) [can delete if we don't need this]</p>
     </footer>
