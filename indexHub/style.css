@@ -16,7 +16,7 @@ body {
 
 
 body {
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('images/bg.jpg') no-repeat center center/cover;
     /* OR for full-screen background with fallback color */
     /*background: url('your-image.jpg') no-repeat center center/cover, #eef3f7;*/
 }
