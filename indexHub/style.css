@@ -1,32 +1,40 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
-    background-color: #c6c6c6; /*Changes base background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), #eef3f7;
+    background-attachment: fixed;
     text-align: left;
+    line-height: 1.6;
+    color: white;
 }
 
-.paragraph-spacing {
-    margin-top: 200px; /* Adjust the value as needed (First block of text outside of the navigation bar)*/
+
+
+body {
+    background: url('bg.jpg') no-repeat center center/cover;
+    /* OR for full-screen background with fallback color */
+    /*background: url('your-image.jpg') no-repeat center center/cover, #eef3f7;*/
 }
+/* Header with high-tech vibe */
+
 
 header {
-    background-color: #747474; /*Changes nav-bar color*/
-    color: #88bdf2;
-    padding: 15px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-footer {
-	margin-top: 50px;
-}
 
-.nav-links a {
-    text-decoration: none;
-    color: #ffffff; /* nav-bar text color */
-    font-size: 25px;
+.topnav {
+    background-color: #203a43;
+    padding: 10px 0;
 }
 
 .nav-links {
@@ -34,22 +42,134 @@ footer {
     align-items: center;
     list-style: none;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
-    padding: 15px; /*nav-bar size*/
+    padding: 0 15px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.nav-links a:hover { /*Hovering over hyperlink actions*/
-    color: blue;
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00e6e6;
     text-decoration: underline;
+    transform: scale(1.05);
 }
 
+.nav-links li:not(:has(a)) {
+    pointer-events: none;
+    user-select: none;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.content {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 30px;
+    color: white; /* Optional if your background is dark */
+}
+ p {
+    border-left: 4px solid #85c1e9;
+    padding: 10px 20px;
+    margin: 15px auto;
+    max-width: 900px;
+    background: none;
+    box-shadow: none;
+}
+
+
+
+/* Ensure bullets align properly */
+ul {
+    list-style-type: disc;
+    margin: 15px 0 25px 40px; /* left space for bullets */
+    padding: 0;
+    color: #ffffff; /* optional */
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+/* Headings */
+h1 {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+ul {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Lists */
+ul {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #0f2027;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 50px;
+}
+
+/* Responsive */
 @media (max-width: 760px) {
     .nav-links {
         flex-direction: column;
     }
-    .content {
-        flex-direction: column;
-		width: 410px;
+
+    p {
+        margin: 20px;
+        font-size: 16px;
     }
+
+    .nav-links li {
+        padding: 8px;
+    }
+}
+
+h2 {
+    position: relative;
+    padding-left: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #85c1e9; /* solid light blue */
+}
