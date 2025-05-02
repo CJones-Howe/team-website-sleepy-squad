@@ -13,15 +13,9 @@ body {
     color: white;
 }
 
-
-
 body {
     background: url('images/bg.jpg') no-repeat center center/cover;
-    /* OR for full-screen background with fallback color */
-    /*background: url('your-image.jpg') no-repeat center center/cover, #eef3f7;*/
 }
-/* Header with high-tech vibe */
-
 
 header {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -55,7 +49,6 @@ header {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    /*font-weight: bold;*/
     transition: all 0.3s ease;
 }
 
@@ -76,7 +69,7 @@ header {
     max-width: 850px;
     margin: 20px auto;
     padding: 0 30px;
-    color: white; /* Optional if your background is dark */
+    color: white; 
 }
  p {
     border-left: 4px solid #85c1e9;
@@ -88,20 +81,18 @@ header {
 }
 
 
-
-/* Ensure bullets align properly */
 ul {
     list-style-type: disc;
-    margin: 15px 0 25px 40px; /* left space for bullets */
+    margin: 15px 0 25px 40px; 
     padding: 0;
-    color: #ffffff; /* optional */
+    color: #ffffff; 
 }
 
 li {
     margin-bottom: 8px;
     line-height: 1.6;
 }
-/* Headings */
+
 h1 {
     color: white;
     margin-top: 30px;
@@ -120,7 +111,7 @@ li {
     line-height: 1.6;
 }
 
-/* Lists */
+
 ul {
     margin-left: 50px;
     padding: 10px;
@@ -130,7 +121,7 @@ li {
     padding-bottom: 5px;
 }
 
-/* Footer */
+
 footer {
     background-color: #0f2027;
     color: #ffffff;
@@ -139,7 +130,6 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsive */
 @media (max-width: 760px) {
     .nav-links {
         flex-direction: column;
@@ -171,5 +161,5 @@ h2::before {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #85c1e9; /* solid light blue */
+    background-color: #85c1e9; 
 }
