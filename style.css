@@ -28,6 +28,12 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+img {
+    display: block; /* Makes the image a block element */
+    margin: 20px auto; /* Centers the image and adds vertical spacing */
+    max-width: 800px; /* Ensures the image does not exceed this width */
+    height: auto; /* Maintains the aspect ratio */
+}
 
 .topnav {
     background-color: #203a43;
