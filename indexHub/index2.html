@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>In-depth Analysis</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-links">
+                <li><a href="index1.html">Home</a></li>
+				<li>|</li>
+                <li><a href="index2.html">In-depth Analysis</a></li>
+				<li>|</li>
+                <li><a href="index3.html">Impact</a></li>
+				<li>|</li>
+                <li><a href="index4.html">Timeline</a></li>
+				<li>|</li>
+                <li><a href="index5.html">Risk Mitigation</a></li>
+				<li>|</li>              
+                <li><a href="index6.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="content">
+	<h2>Technical Logistics of the Attack<br></h2>
+        Vulnerability Exploited: CVE-2017-5638<br>
+        The breach originated from CVE-2017-5638, a critical vulnerability in the Apache Struts 2 framework, specifically within its Jakarta Multipart parser used to handle file uploads. This flaw allowed remote code execution (RCE) through crafted HTTP requests containing malicious Content-Type headers.<br>
+		<ul>
+        <li>Severity: CVSS score of 10.0 (critical)<br></li>
+        <li>Disclosure Date: March 6, 2017<br></li>
+        <li>Patch Released: Same day by the Apache Software Foundation<br></li>
+		</ul>
+    
+    <h2>Equifax’s Failure to Patch<br></h2>
+        Despite receiving alerts from the U.S. Department of Homeland Security (DHS) and internal security directives, Equifax failed to identify and patch all vulnerable systems. A critical web application tied to Equifax's consumer dispute portal remained unpatched and publicly accessible.<br>
+		   <ul>
+		   <li>March 7, 2017: DHS issues public warning<br></li>
+           <li>March 8, 2017: Equifax security team is notified<br></li>
+           <li>March 10, 2017: Attackers begin exploiting the vulnerability<br></li>
+		   </ul>
+        This oversight exposed Equifax to active exploitation for over two months.<br>
+    
+    <h2>Timeline of Exploitation<br></h2>
+        May 13 – July 30, 2017: Attackers maintained persistent access to Equifax’s network<br>
+		<br>
+        Data Exfiltrated: Names, Social Security numbers, birthdates, addresses, driver's license numbers, and credit card information<br>
+        Attackers used web shells and performed lateral movement within the network to escalate access<br>
+        Exfiltration was performed in small, encrypted batches to avoid detection<br>
+    
+    <h2>Operational Tactics<br></h2>
+	<ul>
+	<li>Use of 40+ IP addresses across various countries<br></li>
+    <li>Deployment of encrypted communication channels<br></li>
+    <li>Use of anti-forensic techniques, such as log deletion<br></li>
+    <li>Highly targeted, disciplined data exfiltration strategy indicative of nation-state actors<br> 
+	</ul>
+    
+    <h2>Conclusion<br></h2>
+        The Equifax breach was caused by a failure to patch a known, critical vulnerability—CVE-2017-5638—despite multiple warnings and available fixes. 
+		The attack was executed by sophisticated state-sponsored actors from the Chinese military, whose objective was strategic data acquisition rather than immediate monetary gain.<br>
+        This incident underscores the catastrophic risk of poor patch management, especially in critical infrastructure, and serves as a landmark case linking cybersecurity negligence to national security threats.<br>
+</body>
+</html>
